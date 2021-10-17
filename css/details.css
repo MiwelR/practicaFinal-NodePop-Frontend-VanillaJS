@@ -1,0 +1,97 @@
+.color-layer {
+    background-color: #4B13A7;
+    color: #fff;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-layer>.title-head {
+    font-weight: 300;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.card {
+    height: fit-content;
+    margin: .5rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    width: 70vw;
+}
+
+.card>.card-image {
+    text-align: center;
+    padding-top: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+/* .card-image>.image {
+    height: 350px;
+} */
+
+.card-image>.image>img {
+    height: 80%;
+    object-fit: contain;
+}
+
+/* .card-content {
+    width: 50%;
+} */
+
+.card-content>.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-content>.media>.media-content {
+    width: 100%;
+}
+
+.title.is-4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.title.is-4.description {
+    font-weight: 400;
+    margin-bottom: .6rem;
+}
+
+.subtitle.is-6.state {
+    font-weight: 300;
+    width: 100%;
+    color: #605F60;
+}
+
+.title.is-4.price {
+    font-weight: 700;
+    width: 100%;
+    color: #6693EB;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.button.is-danger.is-outlined {
+    /* border-color: #D42A81;
+    color: #D42A81; */
+    border-color: transparent;
+    background-color: #D42A81;
+    color: #fff;
+}
+
+.button.is-danger.is-outlined:hover {
+    /* border-color: transparent; */
+    background-color: transparent;
+    /* color: #fff; */
+    border-color: #D42A81;
+    color: #D42A81;
+}

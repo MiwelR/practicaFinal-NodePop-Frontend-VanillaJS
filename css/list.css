@@ -1,0 +1,152 @@
+.header {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.img-header {
+    width: 100vw;
+}
+
+.color-layer {
+    position: absolute;
+    background: rgba(97, 17, 177, 0.72);
+    opacity: 72%;
+    width: 100%;
+    height: 100%;
+}
+
+.text-header {
+    position: absolute;
+    width: 100vw;
+    height: min-content;
+    z-index: 10;
+}
+
+.text-header, .second-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 31px;
+}
+
+.second-text {
+    color: #80C7ED;
+    font-weight: 700;
+    font-style: italic;
+}
+
+main>.title-head {
+    color: #777677;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.category {
+    width: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+.category>.icon {
+    display: block;
+    height: 4rem;
+    width: min-content;
+    /* color: #80C7ED; */
+    font-size: 4rem;
+}
+
+.category>.icon-one {
+    color: #80C7ED;
+}
+
+.category>.icon-two {
+    color: #4E61E9;
+}
+
+.category>.icon-three {
+    color: #6211B1;
+}
+
+.category>.icon-four {
+    color: #9A1D99;
+}
+
+.category-text {
+    height: min-content;
+    width: min-content;
+    color: #606060;
+    font-size: 17px;
+    margin-top: .9rem;
+}
+
+.products {
+    display: grid;
+    margin: 0 5rem;
+    grid-template-columns: repeat(4, auto);
+}
+
+.card {
+    width: 20vw;
+    height: fit-content;
+    margin: .5rem;
+}
+
+.card>.card-image {
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.card-image>.image.is-4by3 {
+    /* height: 1rem; */
+    padding-top: 10rem;
+    /* width: 10rem; */
+}
+
+.card-image>.image>img {
+    object-fit: contain;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media-content {
+    width: 100%;
+}
+
+.media-content>.price, .media-content>.title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.media-content>.price {
+    color: #6693EB;
+}
+
+.namecolor {
+    color: #8f9196;
+    font-size: .9rem;
+}
+
+.card-content>.content {
+    height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .8rem;
+}

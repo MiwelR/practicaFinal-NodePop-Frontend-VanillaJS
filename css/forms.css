@@ -1,0 +1,205 @@
+h3 {
+    text-align: center;
+    color: #4014A2;
+    font-weight: 900;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.282);
+    z-index: 100;
+}
+
+.user-form {
+    position: relative;
+    width: 20rem;
+    height: min-content;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    /* padding: 0.5rem; */
+    border-radius: 0.3rem;
+    text-align: center;
+    z-index: 101;
+}
+
+.user-form>h3 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.control {
+    width: 85%;
+}
+
+.control>.button.is-link {
+    width: 100%;
+    background-color: #D42A81;
+    border-color: #D42A81;
+}
+
+.control>.button.is-link.register {
+    width: 100%;
+    background-color: #9A1D99;
+    border-color: #9A1D99;
+}
+
+.banner {
+    margin-top: 3rem;
+    background-color: #6211B1;
+    color: #fff;
+    padding: .7rem;
+    font-size: .8rem;
+}
+
+.banner>p>a {
+    color: #fff;
+}
+
+.banner-login {
+    margin-top: 3rem;
+    background-color: #4014A2;
+    color: #fff;
+    padding: .7rem;
+    font-size: .8rem;
+}
+
+.banner-login>p>a {
+    color: #fff;
+}
+
+/* Formulario para crear anuncio */
+
+.wrapper-formcreate {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.282);
+    z-index: 100;
+}
+
+.wrapper-formcreate>.columns.is-mobile {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.layer {
+    background-color: #4B13A7;
+    color: #fff;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer>.title-head {
+    font-weight: 300;
+}
+
+.create-product {
+    position: relative;
+    background-color: #fff;
+    height: min-content;
+    width: 70vw;
+    padding: 2rem 2rem 2rem 4rem;
+    border-radius: 0.3rem;
+    display: grid;
+    grid-template-areas: "title title" "subtitle subtitle" "url state" "preview category" "preview titleAd" "preview price" "preview description" "preview button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.create-product>h3 {
+    grid-area: title;
+    margin-top: .5rem;
+    text-align: left;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.create-product>p {
+    grid-area: subtitle;
+    text-align: left;
+    font-weight: 400;
+    color: #292F30;
+    margin-bottom: 1.5rem;
+}
+
+.create-product>.field>.control {
+    width: 95%;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.description>.control {
+    width: 95%;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.state {
+    grid-area: state;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.category {
+    grid-area: category;
+}
+
+.create-product>.field.has-addons.has-addons-right.picture {
+    grid-area: url;
+    width: 95%;
+}
+
+.create-product>.field.has-addons.has-addons-right.picture>.control {
+    width: min-content;
+}
+
+.create-product>.field.has-addons.has-addons-right.picture>.control.has-icons-left.has-icons-right {
+    width: 95%;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.title {
+    grid-area: titleAd;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.price {
+    grid-area: price;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.description {
+    grid-area: description;
+}
+
+.create-product>.field.is-grouped.is-grouped-centered.preview {
+    grid-area: preview;
+    height: 100%;
+    width: 95%;
+}
+
+.create-product>.field.is-grouped.is-grouped-centered.preview>.media-left>.image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.create-product>.field.is-grouped.is-grouped-centered.preview>.media-left>.image>img {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+}
+
+.create-product>.field.is-grouped.is-grouped-centered.preview>.media-left {
+    width: 95%;
+}
+
+.create-product>.field.is-grouped.is-grouped-left.button {
+    grid-area: button;
+    border: none;
+}

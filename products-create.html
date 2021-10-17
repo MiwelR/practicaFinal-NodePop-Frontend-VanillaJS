@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/nodepop-ico.png">
+    <title>Nodepop Frontend - Crear Anuncio</title>
+    
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation"></nav>
+    <div class="layer">
+        <p class="title-head">La mejor plataforma de compraventa de productos de segunda mano</p>
+    </div>
+    <div class="messages"></div>
+    <div class="wrapper-formcreate">
+        <div class="columns is-mobile">
+            <div class="column is-3">
+                <form class="create-product" novalidate>
+                    <h3>Crea tu anuncio ahora.</h3>
+                    <p>Puede crear un anuncio como comprador o como vendedor</p>
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="spinner-loader"></div>
+                    </div>
+                    <div class="field is-grouped is-grouped-left state">
+                        <div class="control has-icons-left has-icons-right">
+                            <div class="select is-small">
+                                <select name="state" required>
+                                    <option value="" selected disabled>¿Quieres Vender o Comprar?</option>
+                                    <option value="Vendo">Vendo</option>
+                                    <option value="Compro">Compro</option>
+                                </select>
+                                <div class="icon is-small is-left">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-left category">
+                        <div class="control has-icons-left has-icons-right">
+                            <div class="select is-small">
+                                <select name="category" required>
+                                    <option value="" selected disabled>Elige una Categoría</option>
+                                    <option value="Vehículos">Vehículos</option>
+                                    <option value="Tecnología">Tecnología</option>
+                                    <option value="Inmobiliaria">Inmobiliaria</option>
+                                    <option value="Decoración">Decoración</option>
+                                </select>
+                                <div class="icon is-small is-left">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field has-addons has-addons-right picture">
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-small" type="text" name="image-product" placeholder="URL de su imagen a cargar" required
+                                autofocus>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-camera"></i>
+                            </span>
+                        </div>
+                        <div class="control">
+                            <a class="button is-info is-small">
+                                Cargar imagen
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-left title">
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-small" type="text" name="title" placeholder="Título de su anuncio" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-pen"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-left price">
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-small" type="number" name="price" placeholder="Precio" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-euro-sign"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-left description">
+                        <div class="control has-icons-left has-icons-right">
+                            <textarea class="textarea is-small" name="description" placeholder="Descripción del anuncio" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-centered preview">
+                        <div class="media-left">
+                            <figure class="image">
+                                <img src="./images/image-preview.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-left button">
+                        <div class="control">
+                            <button type="submit" class="button is-link">
+                                Crear Anuncio
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/new-product.js"></script>
+
+</body>
+
+</html>

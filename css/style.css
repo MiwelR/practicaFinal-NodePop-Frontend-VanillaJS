@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.title-head {
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    font-style: oblique;
+    padding: 3rem;
+}
+
+/* SPINNER DE CARGA */
+
+.spinner-loader {
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+
+@keyframes ldio-ioa9xp20wdk {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.ldio-ioa9xp20wdk div {
+    box-sizing: border-box !important
+}
+
+.ldio-ioa9xp20wdk>div {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 14px;
+    left: 14px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    border-color: #6211b1 transparent #6211b1 transparent;
+    animation: ldio-ioa9xp20wdk 1s linear infinite;
+}
+
+.ldio-ioa9xp20wdk>div:nth-child(2) {
+    border-color: transparent
+}
+
+.ldio-ioa9xp20wdk>div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+
+.ldio-ioa9xp20wdk>div:nth-child(2) div:before, .ldio-ioa9xp20wdk>div:nth-child(2) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -8px;
+    left: 24px;
+    background: #6211b1;
+    border-radius: 50%;
+    box-shadow: 0 64px 0 0 #6211b1;
+}
+
+.ldio-ioa9xp20wdk>div:nth-child(2) div:after {
+    left: -8px;
+    top: 24px;
+    box-shadow: 64px 0 0 0 #6211b1;
+}
+
+.loadingio-spinner-dual-ring-d4d87yp3cyq {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    overflow: hidden;
+    background: rgba(NaN, NaN, NaN, 0);
+}
+
+.ldio-ioa9xp20wdk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.55);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    /* see note above */
+}
+
+.ldio-ioa9xp20wdk div {
+    box-sizing: content-box;
+}
+
+/* MENSAJES DE ERROR Y ÉXITO */
+.messages {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 110;
+}
