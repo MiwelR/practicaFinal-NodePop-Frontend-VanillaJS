@@ -1,11 +1,13 @@
 # Bootcamp Full Stack Web Developer #
 
 
-## Práctica Final - Módulo: Desarrollo Backend en NodeJS/MongoDB
+## Práctica Final - Módulo: Desarrollo Frontend con JavaScript
 
 ### NodePop Frontend
 
-Esta práctica consiste en desarrollar el FRONTEND de una aplicación de anuncios de compra/venta de productos.
+Esta práctica consiste en desarrollar el FRONTEND de una aplicación de anuncios de compra/venta de productos, con manejo de usuarios.
+
+Sólo puede usarse VanillaJS, no es posible usar ningún framework o librería.
 
 Contiene:
 
